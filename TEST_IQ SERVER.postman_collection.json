@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "7215f3a7-ab98-4a12-b3bb-71cb80b240cf",
+		"name": "TEST_IQ SERVER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/v1/user/auto-login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"deviceid\": \"test2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://apiiq.bigorder.vn/api/v1/user/auto-login",
+					"protocol": "http",
+					"host": [
+						"apiiq",
+						"bigorder",
+						"vn"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"auto-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/topic/list-category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://apiiq.bigorder.vn/api/v1/topic/list-category?userid=2&token=3ImTNJdI8UrWYh8xwGqHvu4bnVmZyUO8uDTWGPsWmON0Ey2VlU2aYQLZguPBoQie",
+					"protocol": "http",
+					"host": [
+						"apiiq",
+						"bigorder",
+						"vn"
+					],
+					"path": [
+						"api",
+						"v1",
+						"topic",
+						"list-category"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "2"
+						},
+						{
+							"key": "token",
+							"value": "3ImTNJdI8UrWYh8xwGqHvu4bnVmZyUO8uDTWGPsWmON0Ey2VlU2aYQLZguPBoQie"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/topic/list-topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://apiiq.bigorder.vn/api/v1/topic/list-topic?category_id=1&token=VyCrpQMpndXEBDU8sN7b7ndusNdZEoopydopO3qd6KoydGzgkvB2K57bKvaYXLYs&userid=3",
+					"protocol": "http",
+					"host": [
+						"apiiq",
+						"bigorder",
+						"vn"
+					],
+					"path": [
+						"api",
+						"v1",
+						"topic",
+						"list-topic"
+					],
+					"query": [
+						{
+							"key": "category_id",
+							"value": "1"
+						},
+						{
+							"key": "token",
+							"value": "VyCrpQMpndXEBDU8sN7b7ndusNdZEoopydopO3qd6KoydGzgkvB2K57bKvaYXLYs"
+						},
+						{
+							"key": "userid",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/topic/topic-test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://apiiq.bigorder.vn/api/v1/topic/topic-test?topic_id=1&token=VyCrpQMpndXEBDU8sN7b7ndusNdZEoopydopO3qd6KoydGzgkvB2K57bKvaYXLYs&userid=3",
+					"protocol": "http",
+					"host": [
+						"apiiq",
+						"bigorder",
+						"vn"
+					],
+					"path": [
+						"api",
+						"v1",
+						"topic",
+						"topic-test"
+					],
+					"query": [
+						{
+							"key": "topic_id",
+							"value": "1"
+						},
+						{
+							"key": "token",
+							"value": "VyCrpQMpndXEBDU8sN7b7ndusNdZEoopydopO3qd6KoydGzgkvB2K57bKvaYXLYs"
+						},
+						{
+							"key": "userid",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/topic/check-topic-test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userid\": 3,\n\t\"token\": \"VyCrpQMpndXEBDU8sN7b7ndusNdZEoopydopO3qd6KoydGzgkvB2K57bKvaYXLYs\",\n\t\"topic_id\": 1,\n\t\"duration\": 1000,\n\t\"answers\": \"1:1;2:5;3:9;4:16\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://apiiq.bigorder.vn/api/v1/topic/check-topic-test",
+					"protocol": "http",
+					"host": [
+						"apiiq",
+						"bigorder",
+						"vn"
+					],
+					"path": [
+						"api",
+						"v1",
+						"topic",
+						"check-topic-test"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
